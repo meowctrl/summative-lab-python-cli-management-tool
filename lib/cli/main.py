@@ -1,8 +1,8 @@
 import argparse, sys
-from cli.commands.user import setup_user_parser
-from cli.commands.project import setup_project_parser
-from cli.commands.task import setup_task_parser
-from cli.storage import Storage
+from lib.cli.commands.user import setup_user_parser
+from lib.cli.commands.project import setup_project_parser
+from lib.cli.commands.task import setup_task_parser
+from lib.cli.storage import Storage
 
 storage = Storage()
 

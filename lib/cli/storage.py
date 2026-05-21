@@ -32,7 +32,7 @@ class Storage:
         self._save("users.json", [u.to_dict() for u in users])
     
     def load_users(self):
-        from cli.models.user import User
+        from lib.cli.models.user import User
         users = []
         for item in self._load("users.json"):
             user = User(item["name"], item["email"], item["user_id"])
@@ -44,7 +44,7 @@ class Storage:
         self._save("projects.json", [p.to_dict() for p in projects])
     
     def load_projects(self):
-        from cli.models.project import Project
+        from lib.cli.models.project import Project
         projects = []
         for item in self._load("projects.json"):
             p = Project(item["name"], item["owner_id"], item["description"], item["project_id"])
@@ -56,7 +56,7 @@ class Storage:
         self._save("tasks.json", [t.to_dict() for t in tasks])
     
     def load_tasks(self):
-        from cli.models.task import Task, TaskStatus
+        from lib.cli.models.task import Task, TaskStatus
         tasks = []
         for item in self._load("tasks.json"):
             t = Task(item["title"], item["project_id"], item.get("assigned_to"), item.get("description", ""), item["task_id"])

@@ -1,10 +1,10 @@
 """Demo script showing CLI usage with file IO."""
 
 import sys
-from cli.models.user import User
-from cli.models.project import Project
-from cli.models.task import Task
-from cli.storage import Storage
+from lib.cli.models.user import User
+from lib.cli.models.project import Project
+from lib.cli.models.task import Task
+from lib.cli.storage import Storage
 
 
 def demo():

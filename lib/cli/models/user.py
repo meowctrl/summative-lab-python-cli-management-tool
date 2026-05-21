@@ -1,4 +1,4 @@
-from cli.models.base import Person
+from lib.cli.models.base import Person
 
 class User(Person):
     _users = {}

@@ -1,5 +1,5 @@
-from cli.models.project import Project
-from cli.models.user import User
+from lib.cli.models.project import Project
+from lib.cli.models.user import User
 from rich.table import Table
 from rich.console import Console
 

@@ -1,5 +1,5 @@
-from cli.models.task import Task, TaskStatus
-from cli.storage import Storage
+from lib.cli.models.task import Task, TaskStatus
+from lib.cli.storage import Storage
 
 storage = Storage()
 
