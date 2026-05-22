@@ -1,5 +1,5 @@
-from lib.cli.models.user import User
-from lib.cli.storage import Storage
+from cli.models.user import User
+from cli.storage import Storage
 
 storage = Storage()
 
